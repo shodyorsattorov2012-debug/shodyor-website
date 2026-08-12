@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shodyor | My First Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- THEME BUTTON -->
+    <button id="themeBtn" onclick="toggleTheme()">☀️</button>
+
+
+    <!-- HERO -->
+    <main class="container">
+
+        <div class="hello">
+            HELLO WORLD 👋
+        </div>
+
+        <h1>
+            Salom, men <span>Shodyor</span>
+        </h1>
+
+        <p class="intro">
+            Men dasturlashni o‘rganayotgan yosh dasturchiman.
+            Bu mening dasturlashdagi birinchi shaxsiy saytim.
+        </p>
+
+
+        <!-- ABOUT ME -->
+        <div class="info">
+
+            <div class="card">
+                <h3>👨‍💻 Ismim</h3>
+                <p>Shodyor</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Kasbim</h3>
+                <p>Dasturchi</p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Yoshim</h3>
+                <p>14 yosh</p>
+            </div>
+
+        </div>
+
+
+        <!-- MY FIRST WEBSITE BUTTON -->
+        <a href="#results" class="start">
+            Mening 1-saytim 🚀
+        </a>
+
+    </main>
+
+
+    <!-- RESULTS -->
+    <section id="results" class="results">
+
+        <div class="hello">
+            MY RESULTS 🚀
+        </div>
+
+        <h2>
+            Mening hozirgi
+            <span>natijalarim</span>
+        </h2>
+
+        <p class="results-intro">
+            Dasturlashni o‘rganish davomida erishayotgan
+            natijalarim.
+        </p>
+
+
+        <div class="result-cards">
+
+            <!-- HTML -->
+            <div class="result-card">
+
+                <span>01</span>
+
+                <h3>HTML</h3>
+
+                <p>
+                    HTML yordamida web sahifalar yaratishni
+                    va saytning asosiy tuzilishini o‘rganyapman.
+                </p>
+
+            </div>
+
+
+            <!-- CSS -->
+            <div class="result-card">
+
+                <span>02</span>
+
+                <h3>CSS</h3>
+
+                <p>
+                    CSS yordamida saytga ranglar,
+                    dizayn va animatsiyalar qo‘shishni o‘rganyapman.
+                </p>
+
+            </div>
+
+
+            <!-- JAVASCRIPT -->
+            <div class="result-card">
+
+                <span>03</span>
+
+                <h3>JavaScript</h3>
+
+                <p>
+                    JavaScript yordamida saytlarni
+                    interaktiv qilishni o‘rganishni boshladim.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- THEME SCRIPT -->
+    <script>
+
+        function toggleTheme() {
+
+            document.body.classList.toggle("light");
+
+            const button =
+                document.getElementById("themeBtn");
+
+            if (
+                document.body.classList.contains("light")
+            ) {
+
+                button.textContent = "🌙";
+
+            } else {
+
+                button.textContent = "☀️";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
